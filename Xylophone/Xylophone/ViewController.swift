@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func pressedKey(_ sender: UIButton) {
+        print ("zostałęm nasisniety")
+    }
+    
 }
 
