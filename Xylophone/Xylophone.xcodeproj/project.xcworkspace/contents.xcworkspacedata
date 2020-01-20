@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:/Users/maciejgolianek/Documents/iOS13&amp;Swift5/Aplikacje/iOSApp/Xylophone/Xylophone/Sounds"
+      name = "Sounds">
+      <FileRef
+         location = "group:A.wav">
+      </FileRef>
+      <FileRef
+         location = "group:C.wav">
+      </FileRef>
+      <FileRef
+         location = "group:B.wav">
+      </FileRef>
+      <FileRef
+         location = "group:F.wav">
+      </FileRef>
+      <FileRef
+         location = "group:G.wav">
+      </FileRef>
+      <FileRef
+         location = "group:E.wav">
+      </FileRef>
+      <FileRef
+         location = "group:D.wav">
+      </FileRef>
+   </Group>
    <FileRef
-      location = "self:Xylophone.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

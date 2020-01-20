@@ -29,6 +29,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSl-Ko-1er"/>
                                                     <action selector="pressedKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nop-rs-6ah"/>
                                                 </connections>
                                             </button>
