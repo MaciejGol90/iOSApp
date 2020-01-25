@@ -1,14 +1,7 @@
-func greeting () {
-    print("hello")
-    print("hello")
-    print("hello")
-    print("hello")
+func loveCalculator(){
+    let loveChance = Int.random(in: 0...100)
+    if loveChance == 100 {
+        print("this is love")
+    }else{print("szukaj dalej")}
 }
-greeting()
-
-
-//var myAge = 29
-func greeting2(who2greet: String){
-    print("Helo \(who2greet)")
-}
-greeting2(who2greet: "Mark")
+loveCalculator()
