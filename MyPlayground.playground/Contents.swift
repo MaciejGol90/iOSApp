@@ -1,7 +1,9 @@
 func loveCalculator(){
     let loveChance = Int.random(in: 0...100)
-    if loveChance == 100 {
+    if loveChance > 80 {
         print("this is love")
-    }else{print("szukaj dalej")}
+    }else {print("szukaj dalej")
+    }
 }
 loveCalculator()
+ 

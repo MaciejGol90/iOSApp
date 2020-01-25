@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         
         if hardness == "soft"{
             print(self.softTime)
-        }else if hardness == "medium" {
+        }else if hardness == medium {
                  print(self.mediumTime)
         }else{print(self.hardTime)
          }
