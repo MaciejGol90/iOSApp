@@ -15,13 +15,16 @@ class ViewController: UIViewController {
     
     @IBAction func eggButton(_ sender: UIButton) {
         let hardness = sender.currentTitle
-        
-        if hardness == "soft"{
-            print(self.softTime)
-        }else if hardness == medium {
-                 print(self.mediumTime)
-        }else{print(self.hardTime)
-         }
+        switch hardness {
+        case "Soft":
+            print(softTime)
+        case "Medium":
+            print(mediumTime)
+        case "Hard":
+            print(hardTime)
+        default:
+            print("nie wybrałeś jajca")
+        }
 }
 }
 
