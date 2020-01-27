@@ -16,11 +16,11 @@ class ViewController: UIViewController {
         let hardness = sender.currentTitle
         switch hardness {
         case "Soft":
-            print(eggTime)
+            print(eggTime["Soft"]!)
         case "Medium":
-            print(eggTime)
+            print(eggTime["Medium"]!)
         case "Hard":
-            print(eggTime)
+            print(eggTime["Hard"]!)
         default:
             print("nie wybrałeś jajca")
         }
