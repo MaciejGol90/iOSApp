@@ -13,17 +13,18 @@ class ViewController: UIViewController {
     let eggTime = ["Soft": 4, "Medium": 6, "Hard": 9]
     
     @IBAction func eggButton(_ sender: UIButton) {
-        let hardness = sender.currentTitle
-        switch hardness {
-        case "Soft":
-            print(eggTime["Soft"]!)
-        case "Medium":
-            print(eggTime["Medium"]!)
-        case "Hard":
-            print(eggTime["Hard"]!)
-        default:
-            print("nie wybrałeś jajca")
-        }
+        let hardness = sender.currentTitle!
+//        switch hardness {
+//        case "Soft":
+//            print(eggTime["Soft"]!)
+//        case "Medium":
+//            print(eggTime["Medium"]!)
+//        case "Hard":
+//            print(eggTime["Hard"]!)
+//        default:
+//            print("nie wybrałeś jajca")
+//        }
+        print(eggTime[hardness]!)
 }
 }
 
