@@ -9,19 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let softTime = 4
-    let mediumTime = 6
-    let hardTime = 9
+   
+    let eggTime = ["Soft": 4, "Medium": 6, "Hard": 9]
     
     @IBAction func eggButton(_ sender: UIButton) {
         let hardness = sender.currentTitle
         switch hardness {
         case "Soft":
-            print(softTime)
+            print(eggTime)
         case "Medium":
-            print(mediumTime)
+            print(eggTime)
         case "Hard":
-            print(hardTime)
+            print(eggTime)
         default:
             print("nie wybrałeś jajca")
         }
