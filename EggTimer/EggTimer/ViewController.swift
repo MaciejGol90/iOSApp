@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
    
-    let eggTime = ["Soft": 4, "Medium": 6, "Hard": 9]
+    let eggTime = ["Soft": 240, "Medium":360, "Hard": 540]
+    
+    var secondsReaming = 60
     
     @IBAction func eggButton(_ sender: UIButton) {
         let hardness = sender.currentTitle!
@@ -24,7 +26,15 @@ class ViewController: UIViewController {
 //        default:
 //            print("nie wybrałeś jajca")
 //        }
-        print(eggTime[hardness]!)
-}
+//        print(eggTime[hardness]!)
+        secondsReaming = eggTime[hardness]!
+        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+    }
+    @objc func updateTimer(){
+        if secondsReaming > 0 {
+            print("\(secondsReaming) seconds")
+            secondsReaming -= 1
+        }
+    }
 }
 
