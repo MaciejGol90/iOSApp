@@ -13,8 +13,9 @@ class ViewController: UIViewController {
     let eggTime = ["Soft": 240, "Medium":360, "Hard": 540]
     
     var secondsReaming = 60
-    
+    var timer = Timer()
     @IBAction func eggButton(_ sender: UIButton) {
+        timer.invalidate()
         let hardness = sender.currentTitle!
 //        switch hardness {
 //        case "Soft":
@@ -28,7 +29,7 @@ class ViewController: UIViewController {
 //        }
 //        print(eggTime[hardness]!)
         secondsReaming = eggTime[hardness]!
-        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     @objc func updateTimer(){
         if secondsReaming > 0 {
