@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
    
-    let eggTime = ["Soft": 240, "Medium":360, "Hard": 540]
+    @IBOutlet weak var changeTitleLabel: UILabel!
+    let eggTime = ["Soft": 3, "Medium":5, "Hard": 7]
     
     var secondsReaming = 60
     var timer = Timer()
@@ -35,6 +36,9 @@ class ViewController: UIViewController {
         if secondsReaming > 0 {
             print("\(secondsReaming) seconds")
             secondsReaming -= 1
+        }else{
+            timer.invalidate()
+            changeTitleLabel.text = "GOTOWE!!!"
         }
     }
 }
