@@ -10,12 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
    
+    @IBOutlet weak var progrssBar: UIProgressView!
     @IBOutlet weak var changeTitleLabel: UILabel!
     let eggTime = ["Soft": 3, "Medium":5, "Hard": 7]
     
-    var secondsReaming = 60
+    var totalTime = 0
+    var secondPassed = 0
     var timer = Timer()
     @IBAction func eggButton(_ sender: UIButton) {
+        
         timer.invalidate()
         let hardness = sender.currentTitle!
 //        switch hardness {
@@ -29,13 +32,16 @@ class ViewController: UIViewController {
 //            print("nie wybrałeś jajca")
 //        }
 //        print(eggTime[hardness]!)
-        secondsReaming = eggTime[hardness]!
+        totalTime = eggTime[hardness]!
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     @objc func updateTimer(){
-        if secondsReaming > 0 {
-            print("\(secondsReaming) seconds")
-            secondsReaming -= 1
+        if secondPassed > totalTime {
+            secondPassed += 1
+            
+            let percentageProgress = secondPassed / totalTime
+            
+            progrssBar.progress = Float(percentageProgress)
         }else{
             timer.invalidate()
             changeTitleLabel.text = "GOTOWE!!!"
