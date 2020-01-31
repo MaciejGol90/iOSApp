@@ -33,6 +33,10 @@ class ViewController: UIViewController {
 //        }
 //        print(eggTime[hardness]!)
         totalTime = eggTime[hardness]!
+        
+        progrssBar.progress = 0.0
+        secondPassed = 0
+        changeTitleLabel.text = "Portrwa to \(totalTime) sekundy"
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     @objc func updateTimer(){
