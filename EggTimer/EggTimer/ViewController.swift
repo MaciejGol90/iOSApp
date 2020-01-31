@@ -36,12 +36,12 @@ class ViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     @objc func updateTimer(){
-        if secondPassed > totalTime {
+        if secondPassed < totalTime {
             secondPassed += 1
             
-            let percentageProgress = secondPassed / totalTime
+            let percentageProgress = Float(secondPassed) / Float(totalTime)
             
-            progrssBar.progress = Float(percentageProgress)
+            progrssBar.progress = percentageProgress
         }else{
             timer.invalidate()
             changeTitleLabel.text = "GOTOWE!!!"
