@@ -7,13 +7,13 @@
 //
 
 import UIKit
-
+import AVFoundation
 class ViewController: UIViewController {
    
     @IBOutlet weak var progrssBar: UIProgressView!
     @IBOutlet weak var changeTitleLabel: UILabel!
-    let eggTime = ["Soft": 3, "Medium":5, "Hard": 7]
-    
+    let eggTime = ["Soft": 3, "Medium":300, "Hard": 420]
+    var player: AVAudioPlayer!
     var totalTime = 0
     var secondPassed = 0
     var timer = Timer()
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         
         progrssBar.progress = 0.0
         secondPassed = 0
-        changeTitleLabel.text = "Portrwa to \(totalTime) sekundy"
+        changeTitleLabel.text = "Gotowe za  \(totalTime/60) minuty"
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     @objc func updateTimer(){
@@ -49,7 +49,9 @@ class ViewController: UIViewController {
         }else{
             timer.invalidate()
             changeTitleLabel.text = "GOTOWE!!!"
+            let url = Bundle.main.url(forResource: "alarm_sound", withExtension: "mp3")
+            player = try! AVAudioPlayer(contentsOf: url!)
+            player.play()
         }
     }
 }
-
