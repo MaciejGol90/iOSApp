@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -13,17 +13,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="nameForChild" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="153" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aVt-jt-fut">
-                                <rect key="frame" x="51" y="171" width="312" height="554"/>
+                                <rect key="frame" x="31.5" y="59" width="312" height="549"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTv-n1-3Sk">
-                                        <rect key="frame" x="63.5" y="0.0" width="185" height="82"/>
+                                        <rect key="frame" x="56" y="0.0" width="200" height="82"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZn-Jl-O0E">
-                                                <rect key="frame" x="20.5" y="21" width="145" height="38"/>
+                                                <rect key="frame" x="27.5" y="22" width="145" height="38"/>
                                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
                                                 <state key="normal" title="Dziewczynka">
                                                     <color key="titleColor" red="0.80000000000000004" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -35,22 +35,20 @@
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.60392156862745094" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="WZn-Jl-O0E" secondAttribute="bottom" constant="23" id="4ja-IH-uqK"/>
-                                            <constraint firstItem="WZn-Jl-O0E" firstAttribute="centerX" relation="greaterThanOrEqual" secondItem="CTv-n1-3Sk" secondAttribute="centerX" id="LZv-UD-oy2"/>
-                                            <constraint firstItem="WZn-Jl-O0E" firstAttribute="leading" secondItem="CTv-n1-3Sk" secondAttribute="leadingMargin" constant="12.5" id="dqC-z1-iCt"/>
-                                            <constraint firstItem="WZn-Jl-O0E" firstAttribute="top" secondItem="CTv-n1-3Sk" secondAttribute="top" constant="21" id="zfg-PW-Kyb"/>
+                                            <constraint firstItem="WZn-Jl-O0E" firstAttribute="centerY" secondItem="CTv-n1-3Sk" secondAttribute="centerY" id="T9A-WO-9OE"/>
+                                            <constraint firstItem="WZn-Jl-O0E" firstAttribute="centerX" secondItem="CTv-n1-3Sk" secondAttribute="centerX" id="Wnc-Zj-i5c"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMJ-gI-h92">
-                                        <rect key="frame" x="0.0" y="236" width="312" height="82"/>
+                                        <rect key="frame" x="0.0" y="235" width="312" height="79"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imię" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv8-PJ-iQE">
-                                                <rect key="frame" x="19" y="-27" width="274" height="136"/>
+                                                <rect key="frame" x="19" y="-27" width="274" height="133"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="274" id="G3q-Hz-BBf"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -62,10 +60,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="center" semanticContentAttribute="playback" translatesAutoresizingMaskIntoConstraints="NO" id="QL1-5D-Zgs">
-                                        <rect key="frame" x="85" y="472" width="142" height="82"/>
+                                        <rect key="frame" x="66" y="469" width="180" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKF-HN-Zgy">
-                                                <rect key="frame" x="19" y="18" width="104" height="40"/>
+                                                <rect key="frame" x="38" y="21" width="104" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="104" id="enc-dr-vFu"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
                                                 <state key="normal" title="Chłopiec"/>
                                                 <connections>
@@ -75,29 +76,29 @@
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.60392156862745094" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="PKF-HN-Zgy" firstAttribute="top" secondItem="QL1-5D-Zgs" secondAttribute="top" constant="18" id="1n0-X3-P6V"/>
-                                            <constraint firstAttribute="bottom" secondItem="PKF-HN-Zgy" secondAttribute="bottom" constant="24" id="70M-D4-boC"/>
-                                            <constraint firstItem="PKF-HN-Zgy" firstAttribute="centerX" secondItem="QL1-5D-Zgs" secondAttribute="centerX" id="g77-cW-kFR"/>
-                                            <constraint firstItem="PKF-HN-Zgy" firstAttribute="leading" secondItem="QL1-5D-Zgs" secondAttribute="leading" constant="19" id="qwO-RY-Zhu"/>
+                                            <constraint firstItem="PKF-HN-Zgy" firstAttribute="top" secondItem="QL1-5D-Zgs" secondAttribute="top" constant="21" id="59f-eT-tEP"/>
+                                            <constraint firstItem="PKF-HN-Zgy" firstAttribute="leading" secondItem="QL1-5D-Zgs" secondAttribute="leading" constant="38" id="MRf-vv-0R7"/>
+                                            <constraint firstItem="PKF-HN-Zgy" firstAttribute="centerX" secondItem="QL1-5D-Zgs" secondAttribute="centerX" id="OZ4-TM-MUH"/>
+                                            <constraint firstItem="PKF-HN-Zgy" firstAttribute="centerY" secondItem="QL1-5D-Zgs" secondAttribute="centerY" id="YAm-XC-1M5"/>
+                                            <constraint firstItem="PKF-HN-Zgy" firstAttribute="centerY" secondItem="QL1-5D-Zgs" secondAttribute="centerY" id="kHR-YI-8vM"/>
+                                            <constraint firstItem="PKF-HN-Zgy" firstAttribute="centerX" secondItem="QL1-5D-Zgs" secondAttribute="centerX" id="vBX-8c-kcd"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="fMJ-gI-h92" firstAttribute="top" secondItem="aVt-jt-fut" secondAttribute="top" constant="236" id="5TQ-vI-LIG"/>
-                                    <constraint firstItem="fMJ-gI-h92" firstAttribute="centerY" secondItem="aVt-jt-fut" secondAttribute="centerY" id="APD-H3-fo2"/>
-                                    <constraint firstItem="fMJ-gI-h92" firstAttribute="leading" secondItem="aVt-jt-fut" secondAttribute="leadingMargin" id="Loy-jJ-q0h"/>
-                                    <constraint firstItem="QL1-5D-Zgs" firstAttribute="top" secondItem="aVt-jt-fut" secondAttribute="top" constant="472" id="MX9-Ac-LLL"/>
-                                    <constraint firstItem="QL1-5D-Zgs" firstAttribute="leading" secondItem="aVt-jt-fut" secondAttribute="leading" constant="85" id="Ubf-fR-eb1"/>
-                                    <constraint firstAttribute="bottom" secondItem="CTv-n1-3Sk" secondAttribute="bottom" constant="472" id="s3S-oq-hoz"/>
-                                    <constraint firstItem="CTv-n1-3Sk" firstAttribute="leading" secondItem="aVt-jt-fut" secondAttribute="leading" constant="63.5" id="ujX-jX-8ir"/>
+                                    <constraint firstItem="fMJ-gI-h92" firstAttribute="top" secondItem="aVt-jt-fut" secondAttribute="top" constant="235" id="OPR-AY-Sbu"/>
+                                    <constraint firstAttribute="bottom" secondItem="CTv-n1-3Sk" secondAttribute="bottom" constant="467" id="RT5-Z1-a79"/>
+                                    <constraint firstItem="fMJ-gI-h92" firstAttribute="centerY" secondItem="aVt-jt-fut" secondAttribute="centerY" id="bnG-Rb-1A8"/>
+                                    <constraint firstAttribute="width" constant="312" id="mvD-JO-Fch"/>
+                                    <constraint firstItem="CTv-n1-3Sk" firstAttribute="leading" secondItem="aVt-jt-fut" secondAttribute="leading" constant="56" id="otp-tB-8cC"/>
+                                    <constraint firstAttribute="height" constant="549" id="whU-wH-d9F"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="aVt-jt-fut" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="127" id="M0j-cW-k89"/>
-                            <constraint firstItem="aVt-jt-fut" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZgX-gF-bDP"/>
-                            <constraint firstItem="aVt-jt-fut" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pYf-G6-8UJ"/>
+                            <constraint firstItem="aVt-jt-fut" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="By1-RW-mrt"/>
+                            <constraint firstItem="aVt-jt-fut" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZbU-zD-pOd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -107,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.875" y="125.70422535211267"/>
+            <point key="canvasLocation" x="136.80000000000001" y="125.4872563718141"/>
         </scene>
     </scenes>
 </document>
