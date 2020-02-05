@@ -16,84 +16,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="102" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aVt-jt-fut">
-                                <rect key="frame" x="35" y="182" width="344" height="359"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="153" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aVt-jt-fut">
+                                <rect key="frame" x="51" y="171" width="312" height="554"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="sL8-F1-FNz">
-                                        <rect key="frame" x="0.0" y="0.0" width="344" height="80"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTv-n1-3Sk">
+                                        <rect key="frame" x="63.5" y="0.0" width="185" height="82"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTv-n1-3Sk">
-                                                <rect key="frame" x="0.0" y="0.0" width="186" height="80"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZn-Jl-O0E">
-                                                        <rect key="frame" x="20.5" y="21" width="145" height="38"/>
-                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
-                                                        <state key="normal" title="Dziewczynka"/>
-                                                        <connections>
-                                                            <action selector="girlButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GZ5-2z-Jyn"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" red="1" green="0.60392156862745094" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstItem="WZn-Jl-O0E" firstAttribute="centerY" secondItem="CTv-n1-3Sk" secondAttribute="centerY" id="1zk-Vc-fIk"/>
-                                                    <constraint firstItem="WZn-Jl-O0E" firstAttribute="centerX" secondItem="CTv-n1-3Sk" secondAttribute="centerX" id="ntf-EM-W1Q"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QL1-5D-Zgs">
-                                                <rect key="frame" x="201" y="0.0" width="143" height="80"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKF-HN-Zgy">
-                                                        <rect key="frame" x="20" y="20" width="104" height="40"/>
-                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
-                                                        <state key="normal" title="Chłopiec"/>
-                                                        <connections>
-                                                            <action selector="boyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u28-RH-OT8"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" red="1" green="0.60392156862745094" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstItem="PKF-HN-Zgy" firstAttribute="centerX" secondItem="QL1-5D-Zgs" secondAttribute="centerX" id="AIX-pS-NiR"/>
-                                                    <constraint firstItem="PKF-HN-Zgy" firstAttribute="leading" secondItem="QL1-5D-Zgs" secondAttribute="leading" constant="20" id="KaO-Lc-BPg"/>
-                                                    <constraint firstItem="PKF-HN-Zgy" firstAttribute="centerY" secondItem="QL1-5D-Zgs" secondAttribute="centerY" id="TJ1-Pb-W67"/>
-                                                </constraints>
-                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZn-Jl-O0E">
+                                                <rect key="frame" x="20.5" y="21" width="145" height="38"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                                <state key="normal" title="Dziewczynka">
+                                                    <color key="titleColor" red="0.80000000000000004" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="girlButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GZ5-2z-Jyn"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
+                                        <color key="backgroundColor" red="1" green="0.60392156862745094" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="QL1-5D-Zgs" firstAttribute="leading" secondItem="sL8-F1-FNz" secondAttribute="leading" constant="201" id="E1z-R1-1kW"/>
+                                            <constraint firstAttribute="bottom" secondItem="WZn-Jl-O0E" secondAttribute="bottom" constant="23" id="4ja-IH-uqK"/>
+                                            <constraint firstItem="WZn-Jl-O0E" firstAttribute="centerX" relation="greaterThanOrEqual" secondItem="CTv-n1-3Sk" secondAttribute="centerX" id="LZv-UD-oy2"/>
+                                            <constraint firstItem="WZn-Jl-O0E" firstAttribute="leading" secondItem="CTv-n1-3Sk" secondAttribute="leadingMargin" constant="12.5" id="dqC-z1-iCt"/>
+                                            <constraint firstItem="WZn-Jl-O0E" firstAttribute="top" secondItem="CTv-n1-3Sk" secondAttribute="top" constant="21" id="zfg-PW-Kyb"/>
                                         </constraints>
-                                    </stackView>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMJ-gI-h92">
-                                        <rect key="frame" x="15.5" y="182" width="313" height="177"/>
+                                        <rect key="frame" x="0.0" y="236" width="312" height="82"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Imię" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv8-PJ-iQE">
-                                                <rect key="frame" x="20" y="20" width="274" height="137"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imię" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv8-PJ-iQE">
+                                                <rect key="frame" x="19" y="-27" width="274" height="136"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="274" id="G3q-Hz-BBf"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="lv8-PJ-iQE" firstAttribute="centerY" secondItem="fMJ-gI-h92" secondAttribute="centerY" id="9Ds-yT-fp1"/>
-                                            <constraint firstItem="lv8-PJ-iQE" firstAttribute="leading" secondItem="fMJ-gI-h92" secondAttribute="leading" constant="20" id="Csg-XD-gN5"/>
-                                            <constraint firstItem="lv8-PJ-iQE" firstAttribute="centerX" secondItem="fMJ-gI-h92" secondAttribute="centerX" id="HOH-56-sSG"/>
-                                            <constraint firstItem="lv8-PJ-iQE" firstAttribute="top" secondItem="fMJ-gI-h92" secondAttribute="top" constant="20" id="aY8-pD-0hX"/>
+                                            <constraint firstItem="lv8-PJ-iQE" firstAttribute="centerX" secondItem="fMJ-gI-h92" secondAttribute="centerX" id="D6Q-LK-tff"/>
+                                            <constraint firstItem="lv8-PJ-iQE" firstAttribute="top" secondItem="fMJ-gI-h92" secondAttribute="top" constant="-27" id="KWe-Wl-XLh"/>
+                                            <constraint firstItem="lv8-PJ-iQE" firstAttribute="centerY" secondItem="fMJ-gI-h92" secondAttribute="centerY" id="fTp-2M-SpQ"/>
+                                            <constraint firstItem="lv8-PJ-iQE" firstAttribute="leading" secondItem="fMJ-gI-h92" secondAttribute="leading" constant="19" id="zT1-Wa-9On"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="center" semanticContentAttribute="playback" translatesAutoresizingMaskIntoConstraints="NO" id="QL1-5D-Zgs">
+                                        <rect key="frame" x="85" y="472" width="142" height="82"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKF-HN-Zgy">
+                                                <rect key="frame" x="19" y="18" width="104" height="40"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                                <state key="normal" title="Chłopiec"/>
+                                                <connections>
+                                                    <action selector="boyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u28-RH-OT8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.60392156862745094" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="PKF-HN-Zgy" firstAttribute="top" secondItem="QL1-5D-Zgs" secondAttribute="top" constant="18" id="1n0-X3-P6V"/>
+                                            <constraint firstAttribute="bottom" secondItem="PKF-HN-Zgy" secondAttribute="bottom" constant="24" id="70M-D4-boC"/>
+                                            <constraint firstItem="PKF-HN-Zgy" firstAttribute="centerX" secondItem="QL1-5D-Zgs" secondAttribute="centerX" id="g77-cW-kFR"/>
+                                            <constraint firstItem="PKF-HN-Zgy" firstAttribute="leading" secondItem="QL1-5D-Zgs" secondAttribute="leading" constant="19" id="qwO-RY-Zhu"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="fMJ-gI-h92" firstAttribute="leading" secondItem="aVt-jt-fut" secondAttribute="leading" constant="15.5" id="m0h-Rx-r0Q"/>
-                                    <constraint firstItem="fMJ-gI-h92" firstAttribute="top" secondItem="aVt-jt-fut" secondAttribute="top" constant="182" id="qCx-O9-stR"/>
+                                    <constraint firstItem="fMJ-gI-h92" firstAttribute="top" secondItem="aVt-jt-fut" secondAttribute="top" constant="236" id="5TQ-vI-LIG"/>
+                                    <constraint firstItem="fMJ-gI-h92" firstAttribute="centerY" secondItem="aVt-jt-fut" secondAttribute="centerY" id="APD-H3-fo2"/>
+                                    <constraint firstItem="fMJ-gI-h92" firstAttribute="leading" secondItem="aVt-jt-fut" secondAttribute="leadingMargin" id="Loy-jJ-q0h"/>
+                                    <constraint firstItem="QL1-5D-Zgs" firstAttribute="top" secondItem="aVt-jt-fut" secondAttribute="top" constant="472" id="MX9-Ac-LLL"/>
+                                    <constraint firstItem="QL1-5D-Zgs" firstAttribute="leading" secondItem="aVt-jt-fut" secondAttribute="leading" constant="85" id="Ubf-fR-eb1"/>
+                                    <constraint firstAttribute="bottom" secondItem="CTv-n1-3Sk" secondAttribute="bottom" constant="472" id="s3S-oq-hoz"/>
+                                    <constraint firstItem="CTv-n1-3Sk" firstAttribute="leading" secondItem="aVt-jt-fut" secondAttribute="leading" constant="63.5" id="ujX-jX-8ir"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="aVt-jt-fut" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5z5-fF-b77"/>
-                            <constraint firstItem="aVt-jt-fut" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="IL8-2j-5l4"/>
-                            <constraint firstItem="aVt-jt-fut" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="138" id="MSy-z1-TNV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aVt-jt-fut" secondAttribute="bottom" constant="321" id="wm0-Na-Tkx"/>
+                            <constraint firstItem="aVt-jt-fut" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="127" id="M0j-cW-k89"/>
+                            <constraint firstItem="aVt-jt-fut" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZgX-gF-bDP"/>
+                            <constraint firstItem="aVt-jt-fut" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pYf-G6-8UJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -103,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+            <point key="canvasLocation" x="136.875" y="125.70422535211267"/>
         </scene>
     </scenes>
 </document>
