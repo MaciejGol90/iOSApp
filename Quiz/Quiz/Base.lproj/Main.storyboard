@@ -56,8 +56,9 @@
                                             <action selector="anserwButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHA-yE-dCp"/>
                                         </connections>
                                     </button>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="W40-hI-iC7">
+                                    <progressView opaque="NO" alpha="0.5" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="W40-hI-iC7">
                                         <rect key="frame" x="0.0" y="758" width="374" height="60"/>
+                                        <color key="tintColor" red="0.066666666669999999" green="0.1764705882" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="wOp-W4-uHQ"/>
                                         </constraints>

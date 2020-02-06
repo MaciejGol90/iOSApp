@@ -13,12 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
-    let startQuestion = "2+4=6?"
+    let quiz = ["2+4=6?", "Pierwiastek z 9 to 3?", "Czyna dzielić przez 0"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        questionText.text = startQuestion
+        questionText.text = quiz[0]
     }
      @IBAction func anserwButtonPressed(_ sender: UIButton) {
     }
