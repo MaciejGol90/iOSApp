@@ -29,13 +29,17 @@ class ViewController: UIViewController {
         }else{
             print("Nie tym razem Mordo!")
         }
-        
+       if questionNumber + 1 < quiz.count{
         questionNumber += 1
-        updateUI()
+       }else{
+        questionNumber = 0
+       }
+        updateUI ()
+        }
         
-    }
     func updateUI() {
         questionText.text = quiz[questionNumber][0]
              }
+
 }
 
