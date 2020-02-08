@@ -31,12 +31,12 @@
                                         <color key="highlightedColor" red="0.85882352939999995" green="0.8862745098" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfM-fc-0OE">
-                                        <rect key="frame" x="0.0" y="618" width="374.00000000000006" height="60"/>
+                                        <rect key="frame" x="0.0" y="618" width="374" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="v3C-oj-Rt4"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="TRUE" backgroundImage="Rectangle">
+                                        <state key="normal" title="TAK" backgroundImage="Rectangle">
                                             <color key="titleColor" red="0.85882352939999995" green="0.8862745098" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -44,12 +44,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aF-wM-ZSL">
-                                        <rect key="frame" x="0.0" y="688" width="374.00000000000006" height="60"/>
+                                        <rect key="frame" x="0.0" y="688" width="374" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="aaF-Lf-4uT"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="FALSE" backgroundImage="Rectangle">
+                                        <state key="normal" title="NIE" backgroundImage="Rectangle">
                                             <color key="titleColor" red="0.85882352939999995" green="0.8862745098" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>

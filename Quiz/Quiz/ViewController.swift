@@ -13,17 +13,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
-    let quiz = ["2+4=6?", "Pierwiastek z 9 to 3?", "Czyna dzielić przez 0"]
-    
+    let quiz = [
+        ["2+4=6?", "TAK"], ["Pierwiastek z 9 to 3?", "TAK"], ["Czy można dzielić przez 0?","NIE"]]
+    var questionNumber = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        questionText.text = quiz[0]
+        updateUI()
     }
      @IBAction func anserwButtonPressed(_ sender: UIButton) {
+        let userAnserw = sender.currentTitle
+        let acualAnswer = quiz[questionNumber][1]
+        if userAnserw == acualAnswer{
+            print("Brawo!!! Świetnie Mordeczko")
+        }else{
+            print("Nie tym razem Mordo!")
+        }
+        
+        questionNumber += 1
+        updateUI()
+        
     }
-
-    
-
+    func updateUI() {
+        questionText.text = quiz[questionNumber][0]
+             }
 }
 
