@@ -37,7 +37,9 @@ anotherTown.citizen.append("Franio")
 print(anotherTown.buildings)
 print(anotherTown.fortyfy())
 print(anotherTown.citizen)
-
+var ghostTown = Town(name: "GhostTown", citizen: [], buildings: ["cementary": 1])
+anotherTown.citizen.append("Staś")
+ghostTown.fortyfy()
 
 //var myTown = Town()
 //print(myTown.buildings)
