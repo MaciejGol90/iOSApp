@@ -20,12 +20,24 @@ struct Town {
 //        = "MaciekTown"
     var citizen: [String]
 //        = ["Maciek", "Karolina"]
-    var buildings: [String:Int]
+    var buildings: [String : Int]
 //        = ["home" : 100, "flat" : 300, "government building" : 20]
+    
+    init(name: String, citizen: [String], buildings: [String : Int]) {
+        self.name = name
+        self.citizen = citizen
+        self.buildings = buildings
+    }
     func fortyfy() {
         print("Defense increased!")
     }
 }
+var anotherTown = Town(name: "MaciekTown", citizen: ["Karolina", "Maciek"], buildings: ["home":1000, "flat":2])
+anotherTown.citizen.append("Franio")
+print(anotherTown.buildings)
+print(anotherTown.fortyfy())
+print(anotherTown.citizen)
+
 
 //var myTown = Town()
 //print(myTown.buildings)
