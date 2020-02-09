@@ -9,8 +9,19 @@
 //}
 //loveCalculator()
 
-let array = [
-[1, 2, 3, 4, 5, 6, 7, 8, 9]
-]
- 
-print (array[0][8 ])
+//let array = [
+//[1, 2, 3, 4, 5, 6, 7, 8, 9]
+//]
+//
+//print (array[0][8 ])
+
+struct Town {
+    let name = "MaciekTown"
+    var citizen = ["Maciek", "Karolina"]
+    var buildings = ["home" : 100, "flat" : 300, "government building" : 20]
+}
+var myTown = Town()
+print(myTown.buildings)
+print(myTown.citizen)
+myTown.citizen.append("Franek")
+print(myTown.citizen)

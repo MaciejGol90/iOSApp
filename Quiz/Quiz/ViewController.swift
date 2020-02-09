@@ -40,6 +40,5 @@ class ViewController: UIViewController {
     func updateUI() {
         questionText.text = quiz[questionNumber][0]
              }
-
 }
 
