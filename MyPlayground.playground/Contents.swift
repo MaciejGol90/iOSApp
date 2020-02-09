@@ -16,12 +16,19 @@
 //print (array[0][8 ])
 
 struct Town {
-    let name = "MaciekTown"
-    var citizen = ["Maciek", "Karolina"]
-    var buildings = ["home" : 100, "flat" : 300, "government building" : 20]
+    let name : String
+//        = "MaciekTown"
+    var citizen: [String]
+//        = ["Maciek", "Karolina"]
+    var buildings: [String:Int]
+//        = ["home" : 100, "flat" : 300, "government building" : 20]
+    func fortyfy() {
+        print("Defense increased!")
+    }
 }
-var myTown = Town()
-print(myTown.buildings)
-print(myTown.citizen)
-myTown.citizen.append("Franek")
-print(myTown.citizen)
+
+//var myTown = Town()
+//print(myTown.buildings)
+//print(myTown.citizen)
+//myTown.citizen.append("Franek")
+//print(myTown.citizen)
