@@ -14,7 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
     let quiz = [
-        ["2+4=6?", "TAK"], ["Pierwiastek z 9 to 3?", "TAK"], ["Czy można dzielić przez 0?","NIE"]]
+        Question (text: "2+4=6?", answer: "TAK"),
+        Question (text: "Pierwiastek z 9 to 3?", answer: "TAK"),
+        Question (text: "Czy można dzielić przez 0?", answer: "NIE")
+        ]
     var questionNumber = 0
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +26,7 @@ class ViewController: UIViewController {
     }
      @IBAction func anserwButtonPressed(_ sender: UIButton) {
         let userAnserw = sender.currentTitle
-        let acualAnswer = quiz[questionNumber][1]
+        let acualAnswer = quiz[questionNumber].answer
         if userAnserw == acualAnswer{
             print("Brawo!!! Świetnie Mordeczko")
         }else{
@@ -38,7 +41,7 @@ class ViewController: UIViewController {
         }
         
     func updateUI() {
-        questionText.text = quiz[questionNumber][0]
+        questionText.text = quiz[questionNumber].text
              }
 }
 
