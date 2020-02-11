@@ -24,8 +24,18 @@ struct QuizBrain {
         Question(q: "Czy światło może mieć różną barwę?" , a: "TAK")
     ]
       var questionNumber = 0
-    func checkAnswer (_ userAnswer: String) {
-        if userAnswer == quiz[questionNumber].answer
-        
+    func checkAnswer (_ userAnswer: String) -> Bool {
+        if userAnswer == quiz[questionNumber].answer {
+            return true
+        }else{
+    return false
+    }
+}
+    func getQuestionText()->String{
+        return quiz[questionNumber].text
+    }
+    func getProgress()-> Float{
+        let progress = Float(questionNumber) / Float(quiz.count)
+        return progress
     }
 }

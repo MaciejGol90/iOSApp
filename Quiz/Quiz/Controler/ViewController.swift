@@ -13,18 +13,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
-    var quizBrain = QuizeBrain()
+    var quizBrain = QuizBrain()
     
   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        updateUI()
+//        updateUI()
     }
      @IBAction func anserwButtonPressed(_ sender: UIButton) {
         let userAnswer = sender.currentTitle!
-        quizBrain.checkAnswer (userAnswer)
-        if userAnswer == acualAnswer{
+      let userGorRight = quizBrain.checkAnswer(userAnswer)
+        
+        if userGorRight {
             sender.backgroundColor = UIColor.green
             print("Brawo!!! Świetnie Mordeczko")
           
@@ -33,20 +34,23 @@ class ViewController: UIViewController {
             print("Nie tym razem Mordo!")
           
         }
+        if quizBrain.questionNumber + 1 < quizBrain[quiz.count]{
        if questionNumber + 1 < quiz.count{
         questionNumber += 1
-        
+
        }else{
         questionNumber = 0
        }
         Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
         }
-        
-    @objc func updateUI() {
-        questionText.text = quiz[questionNumber].text
+
+        func updateUI() {
+        questionText.text = quizBrain.getQuestionText()
         trueButton.backgroundColor = UIColor.clear
         falseButton.backgroundColor = UIColor.clear
-        progressBar.progress = Float(questionNumber + 1) / Float(quiz.count)
+            progressBar.progress = quizBrain.getProgress()
+            
+        }
              
     }
 }
