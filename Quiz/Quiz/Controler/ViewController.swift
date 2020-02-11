@@ -13,30 +13,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
-    let quiz = [
-        Question(q: "2+4=6?", a: "TAK"),
-        Question(q: "Pierwiastek z 9 to 3?", a: "TAK"),
-        Question(q: "Czy można dzielić przez 0?", a: "NIE"),
-        Question(q: "Czy słoń jest w stanie z siebie wydać dzwięk głośności 188 decybeli", a: "TAK"),
-        Question(q: "Czy ryś jest kotem?", a: "TAK"),
-        Question(q: "Czy antylopa jest szybsza niż gepard?", a: "NIE"),
-        Question(q: "Czy Sylwek i Sylwester to to samo?", a: "TAK"),
-        Question(q: "Czy w wodzie jest więcej tleny niż wodoru?", a: "TAK"),
-        Question(q: "Czy niebo jest zielone?", a: "NIE"),
-        Question(q: "Czy stropian jest jadalny?", a: "NIE"),
-        Question(q: "Cynamon to kora?", a: "TAK"),
-        Question(q: "Czy światło może mieć różną barwę?" , a: "TAK")
-        ]
-    var questionNumber = 0
+    var quizBrain = QuizeBrain()
+    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         updateUI()
     }
      @IBAction func anserwButtonPressed(_ sender: UIButton) {
-        let userAnserw = sender.currentTitle
-        let acualAnswer = quiz[questionNumber].answer
-        if userAnserw == acualAnswer{
+        let userAnswer = sender.currentTitle!
+        quizBrain.checkAnswer (userAnswer)
+        if userAnswer == acualAnswer{
             sender.backgroundColor = UIColor.green
             print("Brawo!!! Świetnie Mordeczko")
           
