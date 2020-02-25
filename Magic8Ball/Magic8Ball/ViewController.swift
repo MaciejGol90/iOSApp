@@ -10,11 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var answerImage: UIImageView!
+    
+    
+    @IBAction func przyciskPytajacy(_ sender: UIButton) {
+        let answerOptionImage = [#imageLiteral(resourceName: "ball1"), #imageLiteral(resourceName: "ball2"), #imageLiteral(resourceName: "ball3"), #imageLiteral(resourceName: "ball4"), #imageLiteral(resourceName: "ball5")]
+       
+        answerImage.image = answerOptionImage[Int.random(in: 0...4)]
     }
-
-
+    
 }
-
