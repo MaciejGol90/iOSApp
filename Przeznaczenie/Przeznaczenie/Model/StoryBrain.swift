@@ -14,7 +14,7 @@ struct StoryBrain {
                choice2: "Skręcam w prawo", choice2Destination: 1),
         Story(title: "Wjechałeś do sincity", choice1: "Miasto jest czarno-białe", choice1Destination: 3,
               choice2: "Krew wszędzie dziwnie czerwona krew", choice2Destination: 4),
-        Story (title: "Wjechałeś do lasu", choice1: "Jest mgliście", choice1Destination:5 , choice2: "Widzisz jezioro w oddali", choice2Destination: 4),
+        Story (title: "Wjechałeś do lasu", choice1: "Jest mgliście", choice1Destination: 4 , choice2: "Widzisz jezioro w oddali", choice2Destination: 3),
         Story(title: "Zostałeś zamordowany", choice1: "END", choice1Destination: 0, choice2: "END", choice2Destination: 0),
         Story(title: "Dojechałeś do SILENT HILL", choice1: "Ucieksz do szpitala", choice1Destination: 3, choice2: "uciekasz przed siebie", choice2Destination: 3)
     ]
