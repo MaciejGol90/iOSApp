@@ -20,11 +20,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func choiceMade (_ sender: UIButton) {
+        storyBrain.nextStory(userChoice: sender.currentTitle!)
+        updateUI()
+    }
     
     func updateUI(){
         storyLabel.text = storyBrain.getStoryTitle()
-        choice1Button.setTitle(storyBrain.getChoice(), for: .normal)
-        choice2Button.setTitle(storyBrain.getChoice(), for: .normal)
+        choice1Button.setTitle(storyBrain.getChoice1(), for: .normal)
+        
+        
+        choice2Button.setTitle(storyBrain.getChoice2(), for: .normal)
     }
     
 }
